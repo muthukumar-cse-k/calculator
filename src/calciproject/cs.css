@@ -1,0 +1,111 @@
+html, body { height: 100%;width:100%; }
+body {
+  background:radial-gradient(ellipse at bottom, rgba(255,254,234,5) 0%, rgba(255,254,234,5) 15%, #0132 100%);
+  overflow: visible;
+}
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(1,1.5,2);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+.back{
+  background-color: white;
+}
+.Class1{
+   padding-right: 30%;
+padding-top: 2%;
+  padding-left: 30%;
+}
+.class7{
+   margin-left:25%;
+   margin-right:40%;
+   background-color:pink; 
+   padding:20px;
+}
+.Class3{
+   margin-left:30%;
+   margin-right:40%;
+}
+.Class2{
+   font-family: italic;
+   color:red;
+}
+.Class3{
+    font-family: italic;
+    color:red;
+    text-align: center;
+ }
+ .Class4{
+    background-color:rgba(255,0,0,0.6);
+    text-align:center;
+    font-weight:bold;
+    opacity:1;
+}
+.Header{
+   color:red;
+   font-weight:bold;
+   font-style:inherit; 
+   margin-left:30%;
+}
+.HeaderR{
+   color:red;
+   font-weight:bold;
+   font-style:inherit; 
+   margin-left:35%;
+}
+.HeaderR1{
+   color:red;
+   font-weight:bold;
+   font-style:inherit; 
+   margin-left:40%;
+}
+.Header1{
+   text-align: center;
+   color:blueviolet;
+   font-weight:bold;
+   font-style:italic; 
+}
+.Header2{
+   text-align: center;
+   color:red;
+   font-weight:bold;
+   font-style:initial; 
+}
+
